@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapibook</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header-top">
+            <div id="topbar">
+                <div class="text">
+                    <p class="topbar">Rất nhiều ưu đãi cực khủng có trong mùa hè này - Lên tới 50%</p>
+                    <p class="shop-now">Mua ngay</p>
+                </div>
+                <div class="btnRegister-Login">
+                    <div class="btnIO btnRegister">
+                        <a href="">Đăng ký</a>
+                    </div>
+                    <div class="btnIO btnLogin">
+                        <a href="">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="header">
+                <a href="" class="logo">
+                    <img src="assets/img/logotest.png" alt="">
+                </a>
+                <div id="menu">
+                    <div class="item">
+                        <a class="active" href="index.html">Home</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Product</a>
+                    </div>
+                    <div class="item">
+                        <a href="">About</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <div id="action">
+                    <div class="item">
+                        <img src="assets/img/heart.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/user.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="box-left">
+                <h2>
+                    <span>Ưu đãi siêu giá trị</span>
+                    <br>
+                    <span>Dành cho khách hàng lần đầu tiên mua hàng</span>
+                </h2>
+                <p>Giảm ngay 300k cho đơn hàng đầu tiên dành cho thành viên mới</p>
+                <button>Xem ngay</button>
+            </div>
+        </div>
+
+        <div id="deals">
+            <div class="deal free-ship">
+                <img src="assets/img/free-ship.png" alt="">
+                <div class="text">
+                    <h4>Miễn phí ship</h4>
+                    <p>Đơn hàng trên 1 triệu</p>
+                </div>
+            </div>
+            <div class="deal free-return">
+                <img src="assets/img/free-return.png" alt="">
+                <div class="text">
+                    <h4>Miễn phí trả hàng</h4>
+                    <p>Trong 30 ngày</p>
+                </div>
+            </div>
+            <div class="deal free-deal">
+                <img src="assets/img/free-deal.png" alt="">
+                <div class="text">
+                    <h4>Nhận ưu đãi 30%</h4>
+                    <p>Khi đăng ký thành viên</p>
+                </div>
+            </div>
+            <div class="deal help">
+                <img src="assets/img/help.png" alt="">
+                <div class="text">
+                    <h4>Hỗ trợ 24/24</h4>
+                    <p>Dịch vụ Hỗ trợ 24/24</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Flash Sale -->
+        <div class="flash-sale-header">
+            <div class="left-label">
+                <div class="text-red">
+                    <div class="dot"></div>
+                    <div class="today">Hôm nay</div>
+                </div>
+                <div class="flash-title">Flash Sales</div>
+            </div>
+            <div class="countdown" id="countdown">
+                <div class="time">Ngày <br><span id="days">03</span></div>:
+                <div class="time">Giờ <br><span id="hours">23</span></div>:
+                <div class="time">Phút <br><span id="minutes">59</span></div>:
+                <div class="time">Giây <br><span id="seconds">59</span></div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <button class="arrow-btn left" onclick="scrollLeftSlider()">&#10094;</button>
+            <div class="product-slider" id="productSlider">
+                <div class="product-card">
+                    <div class="discount">-40%</div>
+                    <!-- Ảnh + icon + thêm giỏ hàng -->
+                    <div class="image-wrapper">
+                        <img src="assets/img/boDoChoiLamBanh.jpg" alt="Đồ chơi">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Bộ đồ chơi làm bánh</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-40%</div>
+                    <!-- Ảnh + icon + thêm giỏ hàng -->
+                    <div class="image-wrapper">
+                        <img src="assets/img/butbithienlong.png" alt="Đồ chơi">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Bút bi thiên long</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-40%</div>
+                    <!-- Ảnh + icon + thêm giỏ hàng -->
+                    <div class="image-wrapper">
+                        <img src="assets/img/congphatoan12.png" alt="Đồ chơi">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Công phá toán 12</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-33%</div>
+
+                    <!-- Ảnh + icon + thêm giỏ hàng -->
+                    <div class="image-wrapper">
+                        <img src="assets/img/hopmaunuoc.png" alt="Hộp màu nước">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Hộp màu nước</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-42%</div>
+
+                    <div class="image-wrapper">
+                        <img src="assets/img/laptrinhchonguoimoibatdau.jpg" alt="Sách IT">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Sách IT</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-50%</div>
+
+                    <div class="image-wrapper">
+                        <img src="assets/img/nhagiakim.png" alt="Nhà giả kim">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Nhà giả kim</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-21%</div>
+
+                    <div class="image-wrapper">
+                        <img src="assets/img/truyenkieu.png" alt="Truyện Kiều">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Truyện kiều</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-40%</div>
+
+                    <div class="image-wrapper">
+                        <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Bộ đồ chơi làm bánh</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="discount">-12%</div>
+
+                    <div class="image-wrapper">
+                        <img src="assets/img/tainghehyperx.png" alt="Tai nghe gaming HyperX">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div id="name-product">Tai nghe gaming HyperX</div>
+                    <div>
+                        <span class="price">$120</span>
+                        <span class="old-price">$160</span>
+                    </div>
+                    <div class="stars">
+                        <!-- Sao đục -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- Sao rỗng -->
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (88)
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="arrow-btn right" onclick="scrollRightSlider()">&#10095;</button>
+        </div>
+        <button class="see-all">Xem tất cả</button>
+
+        <div class="categories-header">
+            <div class="left-label">
+                <div class="text-red">
+                    <div class="dot"></div>
+                    <div class="categories">Thể loại</div>
+                </div>
+                <div class="categories-title">Duyệt theo danh mục</div>
+            </div>
+            <div class="categories-list">
+                <div class="categorie first">
+                    <img src="assets/img/toy.png" alt="">
+                    <div class="text">
+                        <h4>Đồ chơi giáo dục</h4>
+                    </div>
+                </div>
+
+                <div class="categorie second">
+                    <img src="assets/img/learning-tools.png" alt="">
+                    <div class="text">
+                        <h4>Dụng cụ học tập</h4>
+                    </div>
+                </div>
+
+                <div class="categorie third">
+                    <img src="assets/img/book.png" alt="">
+                    <div class="text">
+                        <h4>Sách</h4>
+                    </div>
+                </div>
+
+                <div class="categorie fourth">
+                    <img src="assets/img/newspaper.png" alt="">
+                    <div class="text">
+                        <h4>Báo</h4>
+                    </div>
+                </div>
+
+                <div class="categorie fifth">
+                    <img src="assets/img/story.png" alt="">
+                    <div class="text">
+                        <h4>Truyện</h4>
+                    </div>
+                </div>
+
+                <div class="categorie sixth">
+                    <img src="assets/img/technology.png" alt="">
+                    <div class="text">
+                        <h4>Thiết bị công nghệ</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bestSelling-header">
+            <div class="left-label">
+                <div class="text-red">
+                    <div class="dot"></div>
+                    <div class="best-selling">Tháng này</div>
+                </div>
+                <div class="selling-title">Sản phẩm bán chạy</div>
+            </div>
+            <ul class="products">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class ="product-thumb">
+                                <img src="assets/img/boDoChoiLamBanh.jpg" alt="Bộ đồ chơi làm bánh">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                            <!-- Mua ngay -->
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
+                            <div class="price-star">
+                                <div class="product-price">$2.800,00</div>
+                                <div class="stars">
+                                    <!-- Sao đục -->
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <!-- Sao rỗng -->
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (88)
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+
+    </div>
+
+    <script src="assets/js/Jscript.js" defer></script>
+</body>
+
+</html>
