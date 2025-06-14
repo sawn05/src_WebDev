@@ -1,0 +1,459 @@
+/* Reset CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight:300; */
+    font-style: normal;
+}
+
+html {
+    background-color: #e0e0e0;
+}
+
+
+/* ----------------- Header ---------------- */
+#wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.header-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+#topbar {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+#topbar>.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+#topbar>.text>.shop-now {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+#topbar>.text>p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 50px;
+    margin-right: 30px;
+}
+
+#topbar .btnRegister-Login {
+    display: flex;
+    /* align-items: center; */
+    /* margin: 0 10px; */
+    gap: 10px;
+}
+
+#topbar .btnRegister-Login {
+    margin-right: 200px;
+}
+
+#topbar .btnRegister-Login .btnIO a {
+    margin: 0 10px;
+}
+
+#topbar .btnRegister-Login .btnIO,
+#topbar .btnRegister-Login .btnIO a {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#topbar .btnRegister-Login .btnIO a:hover {
+    text-decoration: underline;
+}
+
+
+#header {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+#header #bar {
+    display: none;
+}
+
+#header .logo img {
+    width: 200px;
+    margin-left: 200px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu .item {
+    margin: 0 20px;
+}
+
+#menu .item a {
+    color: #626A67;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+#menu .item a:hover,
+#menu .item a.active {
+    color: rgb(235, 69, 69);
+}
+
+#menu .item a.active::after,
+#menu .item a:hover::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: rgb(235, 69, 69);
+    bottom: -4px;
+    left: 20px;
+}
+
+
+#action {
+    display: flex;
+    margin-right: 200px;
+}
+
+#action .item {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 3px 8px;
+    border-radius: 50%;
+    color: #626a67;
+    font-size: 20px;
+}
+
+#action .item:hover,
+#action>.item.active-item {
+    background-color: #626A67;
+}
+
+#action .item:hover a,
+#action>.item.active-item a {
+    color: #fff;
+}
+
+#action .item a {
+    text-decoration: none;
+    color: #626A67;
+}
+
+/* --------------- Banner -------------- */
+
+.banner {
+    background-image: url('/assets/img/banner/banner.jpg');
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 135px;
+    display: flex;
+}
+
+.banner .box-left {
+    width: 50%;
+}
+
+.banner h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #424644;
+}
+
+
+
+.banner .box-left p {
+    font-size: 20px;
+    color: #424644;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.banner button {
+    background-image: url('/assets/img/button/button.png');
+    background-color: transparent;
+    color: #424644;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    transition: 2s ease;
+    font-weight: 600;
+}
+
+.banner button:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    bottom: -4px;
+    left: 0;
+}
+
+#deals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 100px;
+    background-color: rgb(245, 245, 245)
+}
+
+.deal {
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+.deal img {
+    width: 60px;
+    height: 60px;
+}
+
+.deal img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.deal .text {
+    margin-top: 5px;
+}
+
+#deals .deal {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px
+}
+
+
+/* ------------------ Footer ---------------- */
+
+/* Footer */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #333;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+/* Responsive */
+/* PC */
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 744px) {
+
+    /* Header */
+    #topbar>.text {
+        margin-left: 20px;
+    }
+
+    #topbar .btnRegister-Login {
+        margin-right: 20px;
+    }
+
+    #header .logo img {
+        margin-left: 0px;
+    }
+
+    #header #action {
+        margin-right: 0px;
+    }
+
+    .banner h2 {
+        font-size: 35px;
+    }
+    .banner .box-left p {
+        font-size: 16px;
+    }
+    #deals {
+        gap: 10px;
+    }
+
+    .categories-header>.left-label {
+        margin: 10px 30px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 743px) {
+
+    /* Header */
+    #topbar {
+        padding: 8px 10px;
+    }
+
+    #topbar>.text {
+        margin-left: 20px;
+    }
+
+    #topbar .btnRegister-Login {
+        margin-right: 20px;
+    }
+
+    #topbar>.text>p {
+        margin-right: 10px;
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    #topbar .btnRegister-Login .btnIO a {
+        margin: 0 4px;
+        font-size: 11px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #header .logo img {
+        margin-left: 50px;
+    }
+
+    #header #action {
+        margin-right: 0;
+    }
+
+    #header #bar {
+        display: block;
+        margin-right: 50px;
+        cursor: pointer;
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    #header #bar:hover {
+        background-color: #626a67;
+        color: #fff;
+    }
+
+    #deals {
+        gap: 0px;
+    }
+    .banner h2 {
+        font-size: 30px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    /* Footer */
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}

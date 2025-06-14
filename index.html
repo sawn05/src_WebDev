@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carabook</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive-header-footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -29,33 +29,33 @@
             </div>
 
             <div id="header">
-                <a href="" class="logo">
+                <a href="index.html" class="logo">
                     <img src="assets/img/logo/logotest.png" alt="">
                 </a>
                 <div id="menu">
                     <div class="item">
-                        <a class="active" href="index.html">Home</a>
+                        <a class="active" href="index.html">Trang chủ</a>
                     </div>
                     <div class="item">
-                        <a href="product.html">Product</a>
+                        <a href="product.html">Sản phẩm</a>
                     </div>
                     <div class="item">
-                        <a href="">About</a>
+                        <a href="about.html">Giới thiệu</a>
                     </div>
                     <div class="item">
-                        <a href="">Contact</a>
+                        <a href="contact.html">Liên hệ</a>
                     </div>
                 </div>
 
                 <div id="action">
                     <div class="item">
-                        <i class="fa-regular fa-heart"></i>
+                        <a href="wishlist.html" class="fa-regular fa-heart"></a>
                     </div>
                     <div class="item">
-                        <i class="fa-regular fa-circle-user"></i>
+                        <a href="profile.html" class="fa-regular fa-circle-user"></a>
                     </div>
                     <div class="item">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html" class="fa-solid fa-cart-shopping"></a>
                     </div>
                 </div>
 
@@ -110,7 +110,6 @@
             </div>
         </div>
     </div>
-    <br>
 
     <div class="content">
 
@@ -177,242 +176,207 @@
                 </div>
                 <div class="selling-title">Sản phẩm bán chạy</div>
             </div>
-            <ul class="products">
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/boDoChoiLamBanh.png" alt="Bộ đồ chơi làm bánh">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Bộ đồ chơi làm bánh</a>
-                            <div class="price-star">
-                                <div class="product-price">$2.800,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <!-- Sao rỗng -->
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    (88)
-                                </div>
 
-                            </div>
+
+            <ul class="product-list">
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/tainghehyperx.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-info">
+                        <h4>Tai nghe gaming HyperX</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/nhagiakim.png" alt="Nhà giả kim">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Nhà giả kim</a>
-                            <div class="price-star">
-                                <div class="product-price">$1.200,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <!-- Sao rỗng -->
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    (539)
-                                </div>
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/laptrinhchonguoimoibatdau.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
 
-                            </div>
+                    <div class="product-info">
+                        <h4>ASUS FHD Gaming Laptop</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/congphatoan12.png" alt="Công phá toán 12">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Công phá toán 12</a>
-                            <div class="price-star">
-                                <div class="product-price">$200,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <!-- Sao rỗng -->
-                                    <i class="fa-regular fa-star"></i>
-                                    (120)
-                                </div>
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/laptrinhchonguoimoibatdau.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
 
-                            </div>
+                    <div class="product-info">
+                        <h4>ASUS FHD Gaming Laptop</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/laptrinhchonguoimoibatdau.png"
-                                    alt="Lập trình cho người mới bắt đầu">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Lập trình cho người mới bắt đầu</a>
-                            <div class="price-star">
-                                <div class="product-price">$800,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <!-- Sao rỗng -->
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    (88)
-                                </div>
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/laptrinhchonguoimoibatdau.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
 
-                            </div>
+                    <div class="product-info">
+                        <h4>ASUS FHD Gaming Laptop</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/butbithienlong.png" alt="Bút bi thiên long">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Bút bi thiên long</a>
-                            <div class="price-star">
-                                <div class="product-price">$100,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    (1028)
-                                </div>
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/laptrinhchonguoimoibatdau.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
 
-                            </div>
+                    <div class="product-info">
+                        <h4>ASUS FHD Gaming Laptop</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/truyenkieu.png" alt="Truyện Kiều">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Truyện Kiều</a>
-                            <div class="price-star">
-                                <div class="product-price">$9.800,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <!-- Sao rỗng -->
-                                    <i class="fa-regular fa-star"></i>
-                                    (177)
-                                </div>
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/laptrinhchonguoimoibatdau.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
 
-                            </div>
+                    <div class="product-info">
+                        <h4>ASUS FHD Gaming Laptop</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/tainghehyperx.png" alt="Tai nghe gaming HyperX">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Tai nghe gaming HyperX</a>
-                            <div class="price-star">
-                                <div class="product-price">$2.120,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <!-- Sao rỗng -->
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    (113)
-                                </div>
 
-                            </div>
+
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/laptrinhchonguoimoibatdau.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-info">
+                        <h4>ASUS FHD Gaming Laptop</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <div class="product-item">
-                        <div class="product-top">
-                            <a href="" class="product-thumb">
-                                <img src="assets/img/book/routerwifi.png" alt="Router Wifi">
-                                <i class="fa-solid fa-cart-plus"></i>
-                            </a>
-                            <a href="" class="buy-now">Mua ngay</a>
-                            <!-- Mua ngay -->
-                        </div>
-                        <div class="product-info">
-                            <a href="" class="product-name">Router Wifi</a>
-                            <div class="price-star">
-                                <div class="product-price">$900,00</div>
-                                <div class="stars">
-                                    <!-- Sao đục -->
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <!-- Sao rỗng -->
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    (828)
-                                </div>
-                            </div>
+                <li class="product-card">
+                    <div class="product-img">
+                        <div class="label sale">-35%</div>
+                        <!-- View -->
+                        <i class="fa-regular fa-eye"></i>
+                        <img src="assets/img/book/laptrinhchonguoimoibatdau.png" alt="Product">
+                        <button class="add-to-cart">🛒 Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-info">
+                        <h4>ASUS FHD Gaming Laptop</h4>
+                        <div class="price"><span>$960</span> <del>$1160</del></div>
+                        <div class="stars">
+                            <!-- Sao đục -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- Sao rỗng -->
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (88)
                         </div>
                     </div>
                 </li>
