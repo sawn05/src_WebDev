@@ -1,0 +1,161 @@
+﻿body {
+    background: linear-gradient(135deg, #e63946, #fcd5ce);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease;
+}
+
+/* ===== CONTAINER FORM ===== */
+.content {
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 18px;
+    width: 500px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.6s ease-in-out;
+    transition: box-shadow 0.3s ease;
+}
+
+    .content:hover {
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ===== TIÊU ĐỀ ===== */
+    .content h2 {
+        margin-bottom: 24px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #2b2b2b;
+        text-align: center;
+        position: relative;
+    }
+
+        .content h2::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #e63946;
+            border-radius: 2px;
+        }
+
+    /* ===== INPUT ===== */
+    .content input[type="text"],
+    .content input[type="password"],
+    .content input[type="email"],
+    .content .aspNetButton input,
+    .content .aspNetButton button {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+
+    .content input:focus {
+        border-color: #7a42f4;
+        box-shadow: 0 0 0 3px rgba(122, 66, 244, 0.2);
+    }
+
+/* ===== PASSWORD CONTAINER ===== */
+.password-container {
+    position: relative;
+}
+
+    .password-container input[type="password"] {
+        padding-right: 42px;
+    }
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 38%;
+    transform: translateY(-50%);
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    .toggle-password:hover {
+        color: #7a42f4;
+    }
+
+/* ===== BUTTON ===== */
+.content input[type="submit"],
+.content .aspNetButton input,
+.content .aspNetButton button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    padding: 12px;
+    border-radius: 10px;
+}
+    .button{
+        text-align: center;
+    }
+
+    .content input[type="submit"]:hover,
+    .content .aspNetButton input:hover {
+        background-color: #e63946;
+        transform: scale(1.02);
+    }
+
+/* ===== LINK & THÔNG BÁO ===== */
+.content p {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.content a {
+    color: #e63946;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+    .content a:hover {
+        color: #e2767e;
+        text-decoration: underline;
+    }
+
+/* ===== LỖI ===== */
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* ===== ANIMATION FADE IN ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
